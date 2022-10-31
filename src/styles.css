@@ -1,0 +1,99 @@
+.bg-company {
+    background-color:rgba(221, 223, 223);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bg-company button:hover {
+      color: #fff;
+    	background: #00CED1;
+    	transition: all .3s linear;
+
+  }
+
+  .Formstate {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    text-align: center;
+    width: 30%;
+    padding-left: 10px;
+    border-top: solid 3px;
+    border-color: rgba(20, 158, 173);
+    font-family: Gill Sans, sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-size: 14px;
+    text-align: left;
+    background-color: white;
+  }
+
+  .Formstate  li {
+
+      list-style-type: none; 
+    }
+
+  .Formstate  ul {
+      margin-left: 0; 
+      padding-left: 0; 
+    }
+
+  .Formstate p {
+      text-align: center;
+      padding-bottom: 10px;
+      margin-bottom: -1px;
+    }
+ 
+  .Formstate input{
+    border-radius: 3px;
+    border: solid 1px;
+    border-color: rgba(220, 220, 220);
+  }
+
+  .company-form {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+  
+  }
+
+  .company-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .company-button button {
+    width: 140px;
+    height: 30px;
+    border-radius: 4px solid;
+    border: 0;
+    background-color: rgba(20, 158, 173);
+    color: white;
+    font-family: Gill Sans, sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+
+  }
+  .company__delete-btn {
+    display: inline;
+    margin-left:5px;
+  }
+
+  .company__delete-btn button {
+    width: 60px;
+    margin-bottom: 5px;
+    border-radius: 3px solid;
+    border: 0;
+    background-color: rgba(20, 158, 173);
+    color: white;
+    font-family: Gill Sans, sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+    font-size: 13px;
+
+  }
+
+  .company__employees {
+   margin-right: 50px;;
+  }
