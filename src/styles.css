@@ -4,6 +4,7 @@
     justify-content: center;
   }
   
+  /* spacing */
   .bg-company button:hover {
       color: #fff;
     	background: #00CED1;
@@ -11,39 +12,50 @@
 
   }
 
+  /* chose another className */
   .Formstate {
     display: flex;
     justify-content: center;
+    /* this line is doing nothing */
     font-family: sans-serif;
+    /* you don't need this because already have justify-content: center; */
     text-align: center;
     width: 30%;
+    /* no need for padding */
     padding-left: 10px;
     border-top: solid 3px;
     border-color: rgba(20, 158, 173);
     font-family: Gill Sans, sans-serif;
+    /* this font-weight is doing nothing here */
     font-weight: 400;
+    /* no need for padding */
     padding-bottom: 20px;
     font-size: 14px;
+    /* duplication properties. Also nothing doing here */
     text-align: left;
     background-color: white;
   }
 
+  /* better to create separate className for li */
   .Formstate  li {
 
       list-style-type: none; 
     }
 
+    /* same for ul */
   .Formstate  ul {
       margin-left: 0; 
       padding-left: 0; 
     }
 
+    /* same for p */
   .Formstate p {
       text-align: center;
       padding-bottom: 10px;
       margin-bottom: -1px;
     }
  
+    /* same here */
   .Formstate input{
     border-radius: 3px;
     border: solid 1px;
@@ -52,6 +64,7 @@
 
   .company-form {
     display: flex;
+    /* instead of justify center and margin it's better to use here justify-content: flex-start */
     justify-content: center;
     margin-right: 30px;
   
@@ -60,16 +73,19 @@
   .company-button {
     display: flex;
     justify-content: center;
+    /* is this case more preferable to use margin instead of padding */
     padding-top: 10px;
   }
 
   .company-button button {
     width: 140px;
     height: 30px;
+    /* you don't need to use solid here, solid you are using in the border property. For border-radius you need only number of pixels or percentage */
     border-radius: 4px solid;
     border: 0;
     background-color: rgba(20, 158, 173);
     color: white;
+    /* no need to overwrite font-family. You declared this property to the whole form */
     font-family: Gill Sans, sans-serif;
     font-weight: 400;
     cursor: pointer;
@@ -83,10 +99,12 @@
   .company__delete-btn button {
     width: 60px;
     margin-bottom: 5px;
+    /* same, solid prop is breaking border-radius style */
     border-radius: 3px solid;
     border: 0;
     background-color: rgba(20, 158, 173);
     color: white;
+    /* same, no need */
     font-family: Gill Sans, sans-serif;
     font-weight: 200;
     cursor: pointer;
@@ -95,5 +113,7 @@
   }
 
   .company__employees {
+    /* spacing */
+    /* also no need to use this style here. It's better to remove text-align: center from the p tag */
    margin-right: 50px;;
   }
